@@ -1,0 +1,12 @@
+[submodule "Extern/Eigen"]
+	path = Extern/Eigen
+	url = https://github.com/eigenteam/eigen-git-mirror.git
+[submodule "Extern/libigl"]
+	path = Extern/libigl
+	url = https://github.com/libigl/libigl.git
+[submodule "Extern/glm"]
+	path = Extern/glm
+	url = https://github.com/g-truc/glm.git
+[submodule "Extern/glew"]
+	path = Extern/glew
+	url = https://github.com/Perlmint/glew-cmake.git
