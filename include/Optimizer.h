@@ -34,8 +34,8 @@ private:
 
 	BlackMesh::BlackMesh<double> *_msh;
 	Primal_Dual_graph _gh;
-	 char* Output_filename;
-	 char* Folder_path;
+	 std::string Output_filename;
+	 std::string Folder_path;
 
 	 int TIME_MIN;
 	 int TIME_MAX;
@@ -210,7 +210,13 @@ public:
 	//others
 	void turn_conf_to_stacked(std::vector<std::vector<double>> &xin, std::vector<int> &xout);////
 
-	inline void setOutputName(  char* folder,  char* name) { Folder_path = folder; Output_filename = name; }
+	inline void setOutputName(  char* folder,  char* name) { 
+		Folder_path = std::string(folder); 
+		Output_filename = std::string(name); 
+		if (Folder_path.back() != '/' && Folder_path.back() != '\\') {
+			Folder_path.push_back('/');
+		}
+	}
 
 	inline void setTimer(int min, int max) {
 		TIME_MIN = min;

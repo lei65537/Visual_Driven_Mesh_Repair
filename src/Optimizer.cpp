@@ -3214,17 +3214,17 @@ void Optimizer::write_mesh_change_topo_with_solution(std::vector<int>& x)
 
 	const char *objsuf = ".obj";
 	const char *mtlsuf = ".mtl";
-	const size_t lenobj = strlen(Folder_path) + strlen(Output_filename) + strlen(objsuf);
-	const size_t lenmtl = strlen(Folder_path) + strlen(Output_filename) + strlen(mtlsuf);
+	const size_t lenobj = Folder_path.length() + Output_filename.length() + strlen(objsuf);
+	const size_t lenmtl = Folder_path.length() + Output_filename.length() + strlen(mtlsuf);
 
 	char *n_strobj = new char[lenobj + 1];
-	strcpy(n_strobj, Folder_path);
-	strcat(n_strobj, Output_filename);
+	strcpy(n_strobj, Folder_path.c_str());
+	strcat(n_strobj, Output_filename.c_str());
 	strcat(n_strobj, objsuf);
 
 	string mtlname = "commonMTL";
 	char *n_strmtl = new char[lenmtl + 1];
-	strcpy(n_strmtl, Folder_path);
+	strcpy(n_strmtl, Folder_path.c_str());
 	strcat(n_strmtl, mtlname.c_str());
 	strcat(n_strmtl, mtlsuf);
 
