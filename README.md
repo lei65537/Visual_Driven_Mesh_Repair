@@ -62,8 +62,8 @@ For example: MeshViewer.exe .\\PATH_TO_Test_examples\\airplane_0627.off 0.0056 0
 ## Processed Datasets
 
 We provide 10k processed meshes of ModelNet and ShapeNet by our program. The meshes are named according to their sources in the respective datasets.
-* ModelNet processed (1.6GB): https://connecthkuhk-my.sharepoint.com/:u:/g/personal/lchu_connect_hku_hk/EXtVgsu1wipBtgCkc_K0dBoB5jMrqxYYly-ClA5kUuV02A?e=JJ9HKz
-* ShapeNet processed (5GB): https://connecthkuhk-my.sharepoint.com/:u:/g/personal/lchu_connect_hku_hk/EXZu2bqfXU5Btpu7bqa9xdQBmIcII5_qD73y_5wfc2GVZw?e=jncBk2
+* ModelNet processed (1.6GB): https://connecthkuhk-my.sharepoint.com/:u:/g/personal/wenhua00_connect_hku_hk/ETGIi2UtszRBjzd2P65sPg0BMDkBXFz8nqIAXynuC49H3g?e=3kliil
+* ShapeNet processed (5GB): https://connecthkuhk-my.sharepoint.com/:u:/g/personal/wenhua00_connect_hku_hk/EYJOeGqcIslJgqzLE4mAoFIB3ky6FPn2uRWK9RMGOEU2Rw?e=YzUDkm
 
 ## License
 The code and data are released under the MIT license.
